@@ -1,2 +1,3 @@
-# rusty_flappy-dragon
-Flappy Dragon Game in Rust
+# Flappy Dragon
+Building a flappy dragon game in Rust.
+Gameloop
