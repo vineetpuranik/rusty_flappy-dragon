@@ -1,16 +1,15 @@
 # Flappy Dragon
 Building a flappy dragon game in Rust.
 
-## Gameloop
-Include bracket-lib in cargo.toml and run cargo build
-    --> Error cmake is not installed.
-    --> Error pkg-config is not installed
-    --> Error fontconfig is not installed.
-    --> after installing these applications cargo clean and run cargo build again.
+## Setup instructions
+
+## Known errors that might occur during setup
+1. Error cmake is not installed.
+2. Error pkg-config is not installed
+3. Error fontconfig is not installed.
+After installing these applications cargo clean and run cargo build again.
     
-Installed cmake, pkg-config, fontconfig 
-Struct state : game state since the ticke function does not know anthing about the game. Represents snapshot of the current game state. 
-Traits similar to interfaces
-Handling Errors in the main function using Results
-Codepage 437 character set
-Game modes - State Machine
+## Gameloop
+For games to operate smoothly they run in a Game loop. The Game loop initializes windowing, graphics and other resources. Subsequently, it runs every time often more than 30 to 60 times per second.
+Each time it calls a tick() function.
+    
