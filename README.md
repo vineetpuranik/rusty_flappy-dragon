@@ -19,3 +19,9 @@ bracket-terminal is the display portion of bracket-lib. It provides an emulated 
 
 ## Storing Game State
 The game loop runs by calling your application's tick() function with every frame. The tick() function does not know anything about our game. So, we need to store the current status of our game which is referred to as the Game State. Everything we need to know to preserve between frames is stored in the Game State. The state represents the snapshot of the current state of the game. Bracket-lib defines a trait for the games state structures known as GameState. GameState requires that the object implement a tick() function.
+
+
+### First Version
+The first version includes very basic play where the player is presented with a menu. Once the player decides to play the game the player's dragon represented with the @ sign will continuosly be falling down because of gravity. The player needs to keep on pressing the space bar button in order to battle the gravity and prevent falling to the end of the screen. If the dragon hits the end of the screen the game ends.
+
+![Animated GIF](/flappy/gifs/First_Version.gif)
