@@ -25,3 +25,8 @@ The game loop runs by calling your application's tick() function with every fram
 The first version includes very basic play where the player is presented with a menu. Once the player decides to play the game the player's dragon represented with the @ sign will continuosly be falling down because of gravity. The player needs to keep on pressing the space bar button in order to battle the gravity and prevent falling to the end of the screen. If the dragon hits the end of the screen the game ends.
 
 ![Animated GIF](/flappy/gifs/First_Version.gif)
+
+### Second Version
+The second version includes adding an obstacle to the game play. Once the game starts, an obstacle is presented with a gap and is moving towards the dragon. The player has to keep on flapping / falling down so that the dragon does not hit the obstacle and safely passes through the gap in the obstacle. As soon as the obstacle reaches the left most side of the screen a new obstacle is rendered and the score of the player is incremented by 1. If the player hits the obstacle the game ends. 
+
+![Animated GIF](/flappy/gifs/Second_Version.gif)
